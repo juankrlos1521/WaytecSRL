@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('NombreUsuario')->unique();            
             $table->string('Contrasena');
             $table->integer('IdTrabajador');
+            $table->enum('type',['miembro','admin'])->default('miembro');
             $table->rememberToken();
             $table->timestamps();
         });
