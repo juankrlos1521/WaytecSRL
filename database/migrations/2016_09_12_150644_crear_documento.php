@@ -13,7 +13,7 @@ class CrearDocumento extends Migration
      */
     public function up()
     {
-        Schema::create('documento', function (Blueprint $table) {
+        Schema::create('documentos', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('NroDocumento');
             $table->integer('IdTipo');

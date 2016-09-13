@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CrearCategoria' => $baseDir . '/database/migrations/2016_09_12_150023_crear_categoria.php',
+    'CrearDetallealmacen' => $baseDir . '/database/migrations/2016_09_13_174645_crear_detallealmacen.php',
     'CrearDetallemovimiento' => $baseDir . '/database/migrations/2016_09_12_150203_crear_detallemovimiento.php',
     'CrearDocumento' => $baseDir . '/database/migrations/2016_09_12_150644_crear_documento.php',
     'CrearEstadomovimiento' => $baseDir . '/database/migrations/2016_09_12_150606_crear_estadomovimiento.php',

@@ -13,12 +13,11 @@ class CrearProducto extends Migration
      */
     public function up()
     {
-        Schema::create('producto', function (Blueprint $table) {
+        Schema::create('productos', function (Blueprint $table) {
             $table->increments('Id');
-            $table->string('Nombre')->unique();            
+            $table->string('Nombre');  
             $table->string('Modelo');$table->string('TipoProducto');
             $table->string('Descripcion');
-            $table->integer('Stock');
             $table->integer('IdMarca');
             $table->integer('IdSubCategoria');
             $table->integer('IdDeposito');

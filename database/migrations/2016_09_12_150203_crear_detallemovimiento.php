@@ -13,7 +13,7 @@ class CrearDetallemovimiento extends Migration
      */
     public function up()
     {
-        Schema::create('detallemovimiento', function (Blueprint $table) {
+        Schema::create('detallemovimientos', function (Blueprint $table) {
             $table->increments('Id');
             $table->integer('IdProducto');
             $table->integer('IdMovimiento');

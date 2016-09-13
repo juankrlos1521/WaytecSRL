@@ -13,7 +13,7 @@ class CrearTipodocumento extends Migration
      */
     public function up()
     {
-        Schema::create('tipodocumento', function (Blueprint $table) {
+        Schema::create('tipodocumentos', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('Descripcion');
             $table->timestamps();

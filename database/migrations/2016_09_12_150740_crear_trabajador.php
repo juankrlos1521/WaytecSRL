@@ -13,7 +13,7 @@ class CrearTrabajador extends Migration
      */
     public function up()
     {
-        Schema::create('trabajador', function (Blueprint $table) {
+        Schema::create('trabajadores', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('Nombres');
             $table->string('ApPaterno');

@@ -13,7 +13,7 @@ class CrearLugardeposito extends Migration
      */
     public function up()
     {
-        Schema::create('lugardeposito', function (Blueprint $table) {
+        Schema::create('lugaresdepositos', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('Descripcion');
             $table->timestamps();

@@ -13,7 +13,7 @@ class CrearMovimientoalmacen extends Migration
      */
     public function up()
     {
-        Schema::create('movimientoalmacen', function (Blueprint $table) {
+        Schema::create('movimientosalmacen', function (Blueprint $table) {
             $table->increments('Id');
             $table->date('Fecha');
             $table->string('TipoMovimiento');

@@ -13,7 +13,7 @@ class CrearEstadomovimiento extends Migration
      */
     public function up()
     {
-        Schema::create('estadomovimiento', function (Blueprint $table) {
+        Schema::create('estadosmovimientos', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('Descripcion');
             $table->timestamps();

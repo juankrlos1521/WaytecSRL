@@ -13,7 +13,7 @@ class CrearNiveltrabajador extends Migration
      */
     public function up()
     {
-        Schema::create('niveltrabajador', function (Blueprint $table) {
+        Schema::create('niveltrabajadores', function (Blueprint $table) {
             $table->increments('Id');
             $table->string('NombrePuesto');
             $table->string('Sueldo');
