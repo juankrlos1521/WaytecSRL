@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CrearDetallealmacen extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuarios', function (Blueprint $table) {
+        Schema::create('detallealmacen', function (Blueprint $table) {
             $table->increments('Id');
-            $table->string('NombreUsuario')->unique();            
-            $table->string('Contrasena');
-            $table->integer('IdTrabajador');
-            $table->enum('type',['miembro','admin'])->default('miembro');
-            $table->rememberToken();
+            $table->integer('Stock');
+            $table->integer('IdProducto');
+            $table->integer('IdLugarDeposito');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('usuarios');
+        Schema::dropIfExists('detallealmacen');
     }
 }
